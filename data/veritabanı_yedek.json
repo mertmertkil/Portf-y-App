@@ -1,0 +1,1340 @@
+{
+    "Islemler": [
+        {
+            "id": 1,
+            "hisse_kodu": "TUPRS.IS",
+            "islem_tipi": "Alış",
+            "adet": 9.0,
+            "fiyat": 160.0,
+            "tarih": "2025-01-01"
+        },
+        {
+            "id": 2,
+            "hisse_kodu": "TUPRS.IS",
+            "islem_tipi": "Alış",
+            "adet": 575.0,
+            "fiyat": 154.48,
+            "tarih": "2025-01-08"
+        },
+        {
+            "id": 3,
+            "hisse_kodu": "TOASO.IS",
+            "islem_tipi": "Alış",
+            "adet": 230.0,
+            "fiyat": 234.6,
+            "tarih": "2025-01-08"
+        },
+        {
+            "id": 4,
+            "hisse_kodu": "TUPRS.IS",
+            "islem_tipi": "Alış",
+            "adet": 25.0,
+            "fiyat": 145.0,
+            "tarih": "2025-01-10"
+        },
+        {
+            "id": 5,
+            "hisse_kodu": "AEFES.IS",
+            "islem_tipi": "Alış",
+            "adet": 66.0,
+            "fiyat": 164.2,
+            "tarih": "2025-01-28"
+        },
+        {
+            "id": 6,
+            "hisse_kodu": "TUPRS.IS",
+            "islem_tipi": "Alış",
+            "adet": 391.0,
+            "fiyat": 137.5,
+            "tarih": "2025-02-11"
+        },
+        {
+            "id": 7,
+            "hisse_kodu": "TOASO.IS",
+            "islem_tipi": "Alış",
+            "adet": 250.0,
+            "fiyat": 203.0,
+            "tarih": "2025-02-11"
+        },
+        {
+            "id": 8,
+            "hisse_kodu": "AEFES.IS",
+            "islem_tipi": "Alış",
+            "adet": 34.0,
+            "fiyat": 174.5,
+            "tarih": "2025-03-19"
+        },
+        {
+            "id": 9,
+            "hisse_kodu": "TOASO.IS",
+            "islem_tipi": "Alış",
+            "adet": 40.0,
+            "fiyat": 196.0,
+            "tarih": "2025-03-19"
+        },
+        {
+            "id": 10,
+            "hisse_kodu": "TCELL.IS",
+            "islem_tipi": "Alış",
+            "adet": 200.0,
+            "fiyat": 98.8,
+            "tarih": "2025-03-19"
+        },
+        {
+            "id": 11,
+            "hisse_kodu": "ENJSA.IS",
+            "islem_tipi": "Alış",
+            "adet": 350.0,
+            "fiyat": 62.45,
+            "tarih": "2025-03-19"
+        },
+        {
+            "id": 12,
+            "hisse_kodu": "MAVI.IS",
+            "islem_tipi": "Alış",
+            "adet": 300.0,
+            "fiyat": 69.6,
+            "tarih": "2025-03-21"
+        },
+        {
+            "id": 13,
+            "hisse_kodu": "TUPRS.IS",
+            "islem_tipi": "Alış",
+            "adet": 47.0,
+            "fiyat": 136.7,
+            "tarih": "2025-04-03"
+        },
+        {
+            "id": 14,
+            "hisse_kodu": "TOASO.IS",
+            "islem_tipi": "Alış",
+            "adet": 22.0,
+            "fiyat": 162.4,
+            "tarih": "2025-04-07"
+        },
+        {
+            "id": 15,
+            "hisse_kodu": "ENJSA.IS",
+            "islem_tipi": "Alış",
+            "adet": 15.0,
+            "fiyat": 57.2,
+            "tarih": "2025-04-24"
+        },
+        {
+            "id": 16,
+            "hisse_kodu": "MAVI.IS",
+            "islem_tipi": "Alış",
+            "adet": 300.0,
+            "fiyat": 0.0,
+            "tarih": "2025-04-24"
+        },
+        {
+            "id": 17,
+            "hisse_kodu": "TCELL.IS",
+            "islem_tipi": "Alış",
+            "adet": 55.0,
+            "fiyat": 90.8,
+            "tarih": "2025-04-28"
+        },
+        {
+            "id": 18,
+            "hisse_kodu": "MAVI.IS",
+            "islem_tipi": "Alış",
+            "adet": 19.0,
+            "fiyat": 31.98,
+            "tarih": "2025-05-28"
+        },
+        {
+            "id": 19,
+            "hisse_kodu": "FROTO.IS",
+            "islem_tipi": "Alış",
+            "adet": 240.0,
+            "fiyat": 87.5,
+            "tarih": "2025-06-11"
+        },
+        {
+            "id": 20,
+            "hisse_kodu": "THYAO.IS",
+            "islem_tipi": "Alış",
+            "adet": 74.0,
+            "fiyat": 285.0,
+            "tarih": "2025-06-18"
+        },
+        {
+            "id": 21,
+            "hisse_kodu": "AEFES.IS",
+            "islem_tipi": "Alış",
+            "adet": 900.0,
+            "fiyat": 0.0,
+            "tarih": "2025-06-26"
+        },
+        {
+            "id": 22,
+            "hisse_kodu": "AEFES.IS",
+            "islem_tipi": "Alış",
+            "adet": 47.0,
+            "fiyat": 14.3,
+            "tarih": "2025-06-27"
+        },
+        {
+            "id": 23,
+            "hisse_kodu": "TCELL.IS",
+            "islem_tipi": "Alış",
+            "adet": 107.0,
+            "fiyat": 93.85,
+            "tarih": "2025-09-02"
+        },
+        {
+            "id": 24,
+            "hisse_kodu": "AEFES.IS",
+            "islem_tipi": "Alış",
+            "adet": 613.0,
+            "fiyat": 16.33,
+            "tarih": "2025-09-04"
+        },
+        {
+            "id": 25,
+            "hisse_kodu": "TCELL.IS",
+            "islem_tipi": "Alış",
+            "adet": 238.0,
+            "fiyat": 88.2,
+            "tarih": "2025-09-11"
+        },
+        {
+            "id": 26,
+            "hisse_kodu": "AEFES.IS",
+            "islem_tipi": "Alış",
+            "adet": 681.0,
+            "fiyat": 14.65,
+            "tarih": "2025-09-11"
+        },
+        {
+            "id": 27,
+            "hisse_kodu": "AVPGY.IS",
+            "islem_tipi": "Alış",
+            "adet": 218.0,
+            "fiyat": 61.7,
+            "tarih": "2025-09-11"
+        },
+        {
+            "id": 28,
+            "hisse_kodu": "TCELL.IS",
+            "islem_tipi": "Alış",
+            "adet": 331.0,
+            "fiyat": 90.5,
+            "tarih": "2025-09-15"
+        },
+        {
+            "id": 29,
+            "hisse_kodu": "ENJSA.IS",
+            "islem_tipi": "Alış",
+            "adet": 690.0,
+            "fiyat": 69.5,
+            "tarih": "2025-09-15"
+        },
+        {
+            "id": 30,
+            "hisse_kodu": "AVPGY.IS",
+            "islem_tipi": "Alış",
+            "adet": 589.0,
+            "fiyat": 59.35,
+            "tarih": "2025-09-15"
+        },
+        {
+            "id": 32,
+            "hisse_kodu": "KCHOL.IS",
+            "islem_tipi": "Alış",
+            "adet": 352.0,
+            "fiyat": 167.5,
+            "tarih": "2025-09-15"
+        },
+        {
+            "id": 33,
+            "hisse_kodu": "MAVI.IS",
+            "islem_tipi": "Alış",
+            "adet": 1213.0,
+            "fiyat": 39.52,
+            "tarih": "2025-09-15"
+        },
+        {
+            "id": 34,
+            "hisse_kodu": "YKBNK.IS",
+            "islem_tipi": "Alış",
+            "adet": 1898.0,
+            "fiyat": 31.08,
+            "tarih": "2025-09-15"
+        },
+        {
+            "id": 35,
+            "hisse_kodu": "AEFES.IS",
+            "islem_tipi": "Alış",
+            "adet": 2093.0,
+            "fiyat": 14.33,
+            "tarih": "2025-09-15"
+        },
+        {
+            "id": 36,
+            "hisse_kodu": "AVPGY.IS",
+            "islem_tipi": "Alış",
+            "adet": 200.0,
+            "fiyat": 60.0,
+            "tarih": "2025-09-16"
+        },
+        {
+            "id": 37,
+            "hisse_kodu": "KCHOL.IS",
+            "islem_tipi": "Alış",
+            "adet": 57.0,
+            "fiyat": 157.5,
+            "tarih": "2025-10-15"
+        },
+        {
+            "id": 38,
+            "hisse_kodu": "YKBNK.IS",
+            "islem_tipi": "Alış",
+            "adet": 311.0,
+            "fiyat": 28.86,
+            "tarih": "2025-10-15"
+        },
+        {
+            "id": 39,
+            "hisse_kodu": "AVPGY.IS",
+            "islem_tipi": "Alış",
+            "adet": 34.0,
+            "fiyat": 57.2,
+            "tarih": "2025-10-16"
+        },
+        {
+            "id": 40,
+            "hisse_kodu": "TUPRS.IS",
+            "islem_tipi": "Alış",
+            "adet": 38.0,
+            "fiyat": 176.1,
+            "tarih": "2025-10-16"
+        },
+        {
+            "id": 41,
+            "hisse_kodu": "AEFES.IS",
+            "islem_tipi": "Alış",
+            "adet": 664.0,
+            "fiyat": 13.55,
+            "tarih": "2025-10-17"
+        },
+        {
+            "id": 42,
+            "hisse_kodu": "AVPGY.IS",
+            "islem_tipi": "Alış",
+            "adet": 180.0,
+            "fiyat": 55.95,
+            "tarih": "2025-12-05"
+        },
+        {
+            "id": 43,
+            "hisse_kodu": "FROTO.IS",
+            "islem_tipi": "Alış",
+            "adet": 45.0,
+            "fiyat": 92.45,
+            "tarih": "2025-12-05"
+        },
+        {
+            "id": 44,
+            "hisse_kodu": "TCELL.IS",
+            "islem_tipi": "Alış",
+            "adet": 15.0,
+            "fiyat": 93.5,
+            "tarih": "2025-12-30"
+        },
+        {
+            "id": 45,
+            "hisse_kodu": "TUPRS.IS",
+            "islem_tipi": "Alış",
+            "adet": 65.0,
+            "fiyat": 214.3,
+            "tarih": "2026-02-27"
+        },
+        {
+            "id": 46,
+            "hisse_kodu": "TOASO.IS",
+            "islem_tipi": "Alış",
+            "adet": 38.0,
+            "fiyat": 316.75,
+            "tarih": "2026-02-27"
+        },
+        {
+            "id": 47,
+            "hisse_kodu": "TCELL.IS",
+            "islem_tipi": "Alış",
+            "adet": 54.0,
+            "fiyat": 116.7,
+            "tarih": "2026-02-27"
+        },
+        {
+            "id": 48,
+            "hisse_kodu": "AVPGY.IS",
+            "islem_tipi": "Alış",
+            "adet": 219.0,
+            "fiyat": 52.3,
+            "tarih": "2026-02-27"
+        },
+        {
+            "id": 49,
+            "hisse_kodu": "FROTO.IS",
+            "islem_tipi": "Alış",
+            "adet": 130.0,
+            "fiyat": 114.8,
+            "tarih": "2026-02-27"
+        },
+        {
+            "id": 50,
+            "hisse_kodu": "KCHOL.IS",
+            "islem_tipi": "Alış",
+            "adet": 61.0,
+            "fiyat": 200.0,
+            "tarih": "2026-02-27"
+        },
+        {
+            "id": 51,
+            "hisse_kodu": "MAVI.IS",
+            "islem_tipi": "Alış",
+            "adet": 238.0,
+            "fiyat": 45.64,
+            "tarih": "2026-02-27"
+        },
+        {
+            "id": 52,
+            "hisse_kodu": "AEFES.IS",
+            "islem_tipi": "Alış",
+            "adet": 602.0,
+            "fiyat": 18.74,
+            "tarih": "2026-02-27"
+        },
+        {
+            "id": 53,
+            "hisse_kodu": "THYAO.IS",
+            "islem_tipi": "Alış",
+            "adet": 46.0,
+            "fiyat": 306.75,
+            "tarih": "2026-02-27"
+        },
+        {
+            "id": 54,
+            "hisse_kodu": "TOASO.IS",
+            "islem_tipi": "Alış",
+            "adet": 62.0,
+            "fiyat": 310.5,
+            "tarih": "2026-03-03"
+        },
+        {
+            "id": 55,
+            "hisse_kodu": "MAVI.IS",
+            "islem_tipi": "Alış",
+            "adet": 430.0,
+            "fiyat": 43.28,
+            "tarih": "2026-03-03"
+        },
+        {
+            "id": 56,
+            "hisse_kodu": "YKBNK.IS",
+            "islem_tipi": "Alış",
+            "adet": 800.0,
+            "fiyat": 38.82,
+            "tarih": "2026-03-03"
+        },
+        {
+            "id": 57,
+            "hisse_kodu": "AEFES.IS",
+            "islem_tipi": "Alış",
+            "adet": 1300.0,
+            "fiyat": 18.61,
+            "tarih": "2026-03-03"
+        },
+        {
+            "id": 58,
+            "hisse_kodu": "THYAO.IS",
+            "islem_tipi": "Alış",
+            "adet": 100.0,
+            "fiyat": 289.75,
+            "tarih": "2026-03-03"
+        },
+        {
+            "id": 59,
+            "hisse_kodu": "TUPRS.IS",
+            "islem_tipi": "Alış",
+            "adet": 40.0,
+            "fiyat": 251.5,
+            "tarih": "2026-03-18"
+        },
+        {
+            "id": 60,
+            "hisse_kodu": "FROTO.IS",
+            "islem_tipi": "Alış",
+            "adet": 28.0,
+            "fiyat": 108.5,
+            "tarih": "2026-03-18"
+        },
+        {
+            "id": 61,
+            "hisse_kodu": "TOASO.IS",
+            "islem_tipi": "Alış",
+            "adet": 39.0,
+            "fiyat": 278.5,
+            "tarih": "2026-03-26"
+        },
+        {
+            "id": 62,
+            "hisse_kodu": "KCHOL.IS",
+            "islem_tipi": "Alış",
+            "adet": 14.0,
+            "fiyat": 190.7,
+            "tarih": "2026-03-27"
+        },
+        {
+            "id": 63,
+            "hisse_kodu": "SAHOL.IS",
+            "islem_tipi": "Alış",
+            "adet": 889.0,
+            "fiyat": 88.15,
+            "tarih": "2026-03-27"
+        },
+        {
+            "id": 64,
+            "hisse_kodu": "EKGYO.IS",
+            "islem_tipi": "Alış",
+            "adet": 4125.0,
+            "fiyat": 19.39,
+            "tarih": "2026-03-27"
+        },
+        {
+            "id": 65,
+            "hisse_kodu": "GARAN.IS",
+            "islem_tipi": "Alış",
+            "adet": 700.0,
+            "fiyat": 128.6,
+            "tarih": "2026-03-27"
+        },
+        {
+            "id": 66,
+            "hisse_kodu": "EREGL.IS",
+            "islem_tipi": "Alış",
+            "adet": 2910.0,
+            "fiyat": 27.52,
+            "tarih": "2026-03-27"
+        },
+        {
+            "id": 67,
+            "hisse_kodu": "AKBNK.IS",
+            "islem_tipi": "Alış",
+            "adet": 1300.0,
+            "fiyat": 69.2,
+            "tarih": "2026-03-27"
+        },
+        {
+            "id": 68,
+            "hisse_kodu": "AKBNK.IS",
+            "islem_tipi": "Alış",
+            "adet": 38.0,
+            "fiyat": 66.3,
+            "tarih": "2026-03-30"
+        },
+        {
+            "id": 69,
+            "hisse_kodu": "SAHOL.IS",
+            "islem_tipi": "Alış",
+            "adet": 13.0,
+            "fiyat": 89.85,
+            "tarih": "2026-04-03"
+        },
+        {
+            "id": 70,
+            "hisse_kodu": "GARAN.IS",
+            "islem_tipi": "Alış",
+            "adet": 23.0,
+            "fiyat": 136.5,
+            "tarih": "2026-04-9"
+        },
+        {
+            "id": 71,
+            "hisse_kodu": "ENJSA.IS",
+            "islem_tipi": "Alış",
+            "adet": 37.0,
+            "fiyat": 124.7,
+            "tarih": "2026-04-15"
+        },
+        {
+            "id": 72,
+            "hisse_kodu": "BUCIM.IS",
+            "islem_tipi": "Alış",
+            "adet": 871.0,
+            "fiyat": 7.59,
+            "tarih": "2025-01-08"
+        },
+        {
+            "id": 73,
+            "hisse_kodu": "BUCIM.IS",
+            "islem_tipi": "Alış",
+            "adet": 129.0,
+            "fiyat": 8.87,
+            "tarih": "2025-01-10"
+        },
+        {
+            "id": 74,
+            "hisse_kodu": "BUCIM.IS",
+            "islem_tipi": "Satış",
+            "adet": 1000.0,
+            "fiyat": 7.05,
+            "tarih": "2026-01-13"
+        },
+        {
+            "id": 75,
+            "hisse_kodu": "SOKM.IS",
+            "islem_tipi": "Alış",
+            "adet": 500.0,
+            "fiyat": 39.52,
+            "tarih": "2025-03-19"
+        },
+        {
+            "id": 76,
+            "hisse_kodu": "SOKM.IS",
+            "islem_tipi": "Satış",
+            "adet": 500.0,
+            "fiyat": 55.32,
+            "tarih": "2026-01-13"
+        },
+        {
+            "id": 77,
+            "hisse_kodu": "ANHHY.IS",
+            "islem_tipi": "Alış",
+            "adet": 100.0,
+            "fiyat": 82.45,
+            "tarih": "2025-04-11"
+        },
+        {
+            "id": 78,
+            "hisse_kodu": "ANHHY.IS",
+            "islem_tipi": "Satış",
+            "adet": 100.0,
+            "fiyat": 87.0,
+            "tarih": "2025-09-16"
+        },
+        {
+            "id": 79,
+            "hisse_kodu": "EFORC.IS",
+            "islem_tipi": "Alış",
+            "adet": 44.0,
+            "fiyat": 14.5,
+            "tarih": "2024-06-26"
+        },
+        {
+            "id": 80,
+            "hisse_kodu": "EFORC.IS",
+            "islem_tipi": "Satış",
+            "adet": 44.0,
+            "fiyat": 75.0,
+            "tarih": "2025-03-13"
+        },
+        {
+            "id": 81,
+            "hisse_kodu": "BULGS.IS",
+            "islem_tipi": "Alış",
+            "adet": 201.0,
+            "fiyat": 12.18,
+            "tarih": "2025-02-18"
+        },
+        {
+            "id": 82,
+            "hisse_kodu": "BULGS.IS",
+            "islem_tipi": "Satış",
+            "adet": 201.0,
+            "fiyat": 21.0,
+            "tarih": "2025-03-12"
+        },
+        {
+            "id": 83,
+            "hisse_kodu": "ALTIN.S1",
+            "islem_tipi": "Alış",
+            "adet": 402.0,
+            "fiyat": 47.53,
+            "tarih": "2025-08-25"
+        },
+        {
+            "id": 84,
+            "hisse_kodu": "ALTIN.S1",
+            "islem_tipi": "Satış",
+            "adet": 402.0,
+            "fiyat": 52.0,
+            "tarih": "2025-09-04"
+        },
+        {
+            "id": 85,
+            "hisse_kodu": "TUPRS.IS",
+            "islem_tipi": "Satış",
+            "adet": 145.0,
+            "fiyat": 275.0,
+            "tarih": "2026-04-29"
+        },
+        {
+            "id": 86,
+            "hisse_kodu": "ENJSA.IS",
+            "islem_tipi": "Satış",
+            "adet": 329.0,
+            "fiyat": 121.2,
+            "tarih": "2026-04-29"
+        },
+        {
+            "id": 87,
+            "hisse_kodu": "MAVI.IS",
+            "islem_tipi": "Alış",
+            "adet": 44.84,
+            "fiyat": 80.0,
+            "tarih": "2026-05-08"
+        }
+    ],
+    "Hisseler": [
+        {
+            "id": 0,
+            "hisse_kodu": "",
+            "hisse_adi": "",
+            "sektor": ""
+        },
+        {
+            "id": 1,
+            "hisse_kodu": "TUPRS.IS",
+            "hisse_adi": "TÜPRAŞ",
+            "sektor": "ENERJİ / PETROL"
+        },
+        {
+            "id": 3,
+            "hisse_kodu": "TCELL.IS",
+            "hisse_adi": "TÜRKCELL",
+            "sektor": "TELEKOM"
+        },
+        {
+            "id": 4,
+            "hisse_kodu": "ENJSA.IS",
+            "hisse_adi": "ENERJİ SA",
+            "sektor": "ENERJİ DAĞITIM"
+        },
+        {
+            "id": 5,
+            "hisse_kodu": "EREGL.IS",
+            "hisse_adi": "EREĞLİ DEMİR ÇELİK",
+            "sektor": "DEMİR ÇELİK"
+        },
+        {
+            "id": 6,
+            "hisse_kodu": "THYAO.IS",
+            "hisse_adi": "THY",
+            "sektor": "ULAŞTIRMA"
+        },
+        {
+            "id": 7,
+            "hisse_kodu": "YKBNK.IS",
+            "hisse_adi": "YAPI KREDİ",
+            "sektor": "BANKACILIK"
+        },
+        {
+            "id": 8,
+            "hisse_kodu": "AKBNK.IS",
+            "hisse_adi": "AKBANK",
+            "sektor": "BANKACILIK"
+        },
+        {
+            "id": 9,
+            "hisse_kodu": "GARAN.IS",
+            "hisse_adi": "GARANTİ",
+            "sektor": "BANKACILIK"
+        },
+        {
+            "id": 10,
+            "hisse_kodu": "FROTO.IS",
+            "hisse_adi": "FORD OTO",
+            "sektor": "OTOMOTİV"
+        },
+        {
+            "id": 11,
+            "hisse_kodu": "KCHOL.IS",
+            "hisse_adi": "KOÇ HOLDİNG",
+            "sektor": "HOLDİNG"
+        },
+        {
+            "id": 12,
+            "hisse_kodu": "SAHOL.IS",
+            "hisse_adi": "SABANCI HOLDİNG",
+            "sektor": "HOLDİNG"
+        },
+        {
+            "id": 13,
+            "hisse_kodu": "AVPGY.IS",
+            "hisse_adi": "AVRUPA KONUT GYO",
+            "sektor": "GYO"
+        },
+        {
+            "id": 14,
+            "hisse_kodu": "EKGYO.IS",
+            "hisse_adi": "EMLAK KONUT GYO",
+            "sektor": "GYO"
+        },
+        {
+            "id": 15,
+            "hisse_kodu": "MAVI.IS",
+            "hisse_adi": "MAVİ",
+            "sektor": "TEKSTİL / PERAKENDE"
+        },
+        {
+            "id": 16,
+            "hisse_kodu": "AEFES.IS",
+            "hisse_adi": "ANADOL EFES",
+            "sektor": "GIDA / İÇECEK"
+        },
+        {
+            "id": 17,
+            "hisse_kodu": "SOKM.IS",
+            "hisse_adi": "SOK MARKET",
+            "sektor": "GIDA / PERAKENDE"
+        },
+        {
+            "id": 18,
+            "hisse_kodu": "EFORC.IS",
+            "hisse_adi": "EFOR ÇAY",
+            "sektor": "GIDA / PERAKENDE"
+        },
+        {
+            "id": 19,
+            "hisse_kodu": "BUCIM.IS",
+            "hisse_adi": "BURSA ÇİMENTO",
+            "sektor": "İNŞAAT / ÇİMENTO"
+        },
+        {
+            "id": 20,
+            "hisse_kodu": "ANHYT.IS",
+            "hisse_adi": "ANADOLU HAYAT",
+            "sektor": "SİGORTA"
+        },
+        {
+            "id": 21,
+            "hisse_kodu": "BULGS.IS",
+            "hisse_adi": "BULLS YATIRIM",
+            "sektor": "YATIRIM"
+        },
+        {
+            "id": 22,
+            "hisse_kodu": "ALTIN.S1",
+            "hisse_adi": "ALTIN SERTİFİKASI",
+            "sektor": "ALTIN"
+        },
+        {
+            "id": 23,
+            "hisse_kodu": "",
+            "hisse_adi": "",
+            "sektor": ""
+        }
+    ],
+    "Fonlar": [
+        {
+            "Id": 1,
+            "fon_kodu": "TAU",
+            "islem_tipi": "Alış",
+            "adet": 54545.0,
+            "birim_fiyat": 0.5,
+            "tarih": "2024-06-01"
+        },
+        {
+            "Id": 2,
+            "fon_kodu": "TAU",
+            "islem_tipi": "Satış",
+            "adet": 54545.0,
+            "birim_fiyat": 0.64,
+            "tarih": "2025-01.01"
+        },
+        {
+            "Id": 3,
+            "fon_kodu": "IHK",
+            "islem_tipi": "Alış",
+            "adet": 23000.0,
+            "birim_fiyat": 1.0,
+            "tarih": "2024-06-01"
+        },
+        {
+            "Id": 4,
+            "fon_kodu": "IHK",
+            "islem_tipi": "Satış",
+            "adet": 23000.0,
+            "birim_fiyat": 1.04,
+            "tarih": "2025-01-01"
+        },
+        {
+            "Id": 5,
+            "fon_kodu": "YAY",
+            "islem_tipi": "Alış",
+            "adet": 42.0,
+            "birim_fiyat": 740.0,
+            "tarih": "2024-06-01"
+        },
+        {
+            "Id": 6,
+            "fon_kodu": "YAY",
+            "islem_tipi": "Satış",
+            "adet": 42.0,
+            "birim_fiyat": 1076.0,
+            "tarih": "2025-01-01"
+        },
+        {
+            "Id": 7,
+            "fon_kodu": "TMG",
+            "islem_tipi": "Alış",
+            "adet": 25778.0,
+            "birim_fiyat": 0.73,
+            "tarih": "2024-06-01"
+        },
+        {
+            "Id": 8,
+            "fon_kodu": "TMG",
+            "islem_tipi": "Satış",
+            "adet": 25778.0,
+            "birim_fiyat": 1.0,
+            "tarih": "2025-01-01"
+        },
+        {
+            "Id": 9,
+            "fon_kodu": "BIG",
+            "islem_tipi": "Alış",
+            "adet": 18740.0,
+            "birim_fiyat": 0.98,
+            "tarih": "2025-04-01"
+        },
+        {
+            "Id": 10,
+            "fon_kodu": "BIG",
+            "islem_tipi": "Satış",
+            "adet": 18740.0,
+            "birim_fiyat": 1.37,
+            "tarih": "2026-05-04"
+        },
+        {
+            "Id": 11,
+            "fon_kodu": "SAS",
+            "islem_tipi": "Alış",
+            "adet": 28548.0,
+            "birim_fiyat": 1.17,
+            "tarih": "2024-06-01"
+        },
+        {
+            "Id": 12,
+            "fon_kodu": "SAS",
+            "islem_tipi": "Satış",
+            "adet": 28548.0,
+            "birim_fiyat": 1.67,
+            "tarih": "2026-05-04"
+        },
+        {
+            "Id": 13,
+            "fon_kodu": "YAS",
+            "islem_tipi": "Alış",
+            "adet": 2997.0,
+            "birim_fiyat": 11.96,
+            "tarih": "2025-06-01"
+        },
+        {
+            "Id": 14,
+            "fon_kodu": "YAS",
+            "islem_tipi": "Satış",
+            "adet": 2997.0,
+            "birim_fiyat": 15.03,
+            "tarih": "2026-05-04"
+        },
+        {
+            "Id": 15,
+            "fon_kodu": "TAU",
+            "islem_tipi": "Alış",
+            "adet": 130800.0,
+            "birim_fiyat": 0.5,
+            "tarih": "2025-06-01"
+        },
+        {
+            "Id": 16,
+            "fon_kodu": "TAU",
+            "islem_tipi": "Satış",
+            "adet": 130800.0,
+            "birim_fiyat": 0.65,
+            "tarih": "2026-05-04"
+        }
+    ],
+    "Tahvil": [
+        {
+            "id": 1,
+            "tahvil_kodu": "T36",
+            "islem_tipi": "Alış",
+            "fiyat": 100.2,
+            "adet": 287800.0,
+            "kupon_orani": 18.39,
+            "vade_sonu": "2027-10-13"
+        }
+    ],
+    "Kuponlar": [
+        {
+            "id": 1,
+            "tahvil_kodu": "T36",
+            "odeme_tarihi": "2026-10-14",
+            "miktar": 18.39,
+            "islem_durumu": "BEKLIYOR",
+            "notlar": null
+        }
+    ],
+    "Temettuler": [
+        {
+            "id": 1,
+            "hisse_kodu": "TUPRS.IS",
+            "brut_miktar": 7.78,
+            "net_miktar": 6.61,
+            "tarih": "2025-03-28"
+        },
+        {
+            "id": 2,
+            "hisse_kodu": "TOASO.IS",
+            "brut_miktar": 12.0,
+            "net_miktar": 10.2,
+            "tarih": "2025-04-03"
+        },
+        {
+            "id": 3,
+            "hisse_kodu": "ENJSA.IS",
+            "brut_miktar": 2.87,
+            "net_miktar": 2.43,
+            "tarih": "2025-04-24"
+        },
+        {
+            "id": 4,
+            "hisse_kodu": "MAVI.IS",
+            "brut_miktar": 1.17,
+            "net_miktar": 0.99,
+            "tarih": "2025-05-28"
+        },
+        {
+            "id": 5,
+            "hisse_kodu": "AEFES.IS",
+            "brut_miktar": 1.27,
+            "net_miktar": 1.08,
+            "tarih": "2025-05-29"
+        },
+        {
+            "id": 6,
+            "hisse_kodu": "TCELL.IS",
+            "brut_miktar": 1.81,
+            "net_miktar": 1.54,
+            "tarih": "2025-06-24"
+        },
+        {
+            "id": 7,
+            "hisse_kodu": "TUPRS.IS",
+            "brut_miktar": 7.42,
+            "net_miktar": 6.3,
+            "tarih": "2025-09-30"
+        },
+        {
+            "id": 8,
+            "hisse_kodu": "AVPGY.IS",
+            "brut_miktar": 1.93,
+            "net_miktar": 1.93,
+            "tarih": "2025-10-16"
+        },
+        {
+            "id": 9,
+            "hisse_kodu": "FROTO.IS",
+            "brut_miktar": 6.05,
+            "net_miktar": 5.14,
+            "tarih": "2025-12-05"
+        },
+        {
+            "id": 10,
+            "hisse_kodu": "TCELL.IS",
+            "brut_miktar": 1.81,
+            "net_miktar": 1.54,
+            "tarih": "2025-12-30"
+        },
+        {
+            "id": 11,
+            "hisse_kodu": "TUPRS.IS",
+            "brut_miktar": 10.38,
+            "net_miktar": 8.82,
+            "tarih": "2026-03-18"
+        },
+        {
+            "id": 12,
+            "hisse_kodu": "FROTO.IS",
+            "brut_miktar": 3.64,
+            "net_miktar": 3.09,
+            "tarih": "2026-03-18"
+        },
+        {
+            "id": 13,
+            "hisse_kodu": "TOASO.IS",
+            "brut_miktar": 20.0,
+            "net_miktar": 17.0,
+            "tarih": "2026-03-24"
+        },
+        {
+            "id": 14,
+            "hisse_kodu": "KCHOL.IS",
+            "brut_miktar": 6.83,
+            "net_miktar": 5.8,
+            "tarih": "2026-03-27"
+        },
+        {
+            "id": 15,
+            "hisse_kodu": "AKBNK.IS",
+            "brut_miktar": 2.2,
+            "net_miktar": 1.87,
+            "tarih": "2026-03-30"
+        },
+        {
+            "id": 16,
+            "hisse_kodu": "SAHOL.IS",
+            "brut_miktar": 1.41,
+            "net_miktar": 1.33,
+            "tarih": "2026-04-03"
+        },
+        {
+            "id": 17,
+            "hisse_kodu": "GARAN.IS",
+            "brut_miktar": 5.26,
+            "net_miktar": 4.47,
+            "tarih": "2026-04-09"
+        },
+        {
+            "id": 18,
+            "hisse_kodu": "ENJSA.IS",
+            "brut_miktar": 5.08,
+            "net_miktar": 4.31,
+            "tarih": "2026-04-15"
+        },
+        {
+            "id": 19,
+            "hisse_kodu": "MAVI.IS",
+            "brut_miktar": 1.67,
+            "net_miktar": 1.42,
+            "tarih": "2026-05-08"
+        }
+    ],
+    "Portfoy_Ozet": [
+        {
+            "id": 23,
+            "hisse_kodu": "TUPRS.IS",
+            "toplam_adet": 1045.0,
+            "ort_maliyet": 131.81,
+            "satilan_adet": 145.0,
+            "satis_kari": 39875.0,
+            "temettu_geliri": 23701.9,
+            "real_maliyet": 97480.9
+        },
+        {
+            "id": 24,
+            "hisse_kodu": "TOASO.IS",
+            "toplam_adet": 681.0,
+            "ort_maliyet": 204.39,
+            "satilan_adet": 0.0,
+            "satis_kari": 0.0,
+            "temettu_geliri": 16218.0,
+            "real_maliyet": 125833.8
+        },
+        {
+            "id": 25,
+            "hisse_kodu": "AEFES.IS",
+            "toplam_adet": 7000.0,
+            "ort_maliyet": 15.97,
+            "satilan_adet": 0.0,
+            "satis_kari": 0.0,
+            "temettu_geliri": 108.0,
+            "real_maliyet": 111677.61
+        },
+        {
+            "id": 26,
+            "hisse_kodu": "TCELL.IS",
+            "toplam_adet": 1000.0,
+            "ort_maliyet": 91.27,
+            "satilan_adet": 0.0,
+            "satis_kari": 0.0,
+            "temettu_geliri": 1849.54,
+            "real_maliyet": 89748.27
+        },
+        {
+            "id": 27,
+            "hisse_kodu": "ENJSA.IS",
+            "toplam_adet": 763.0,
+            "ort_maliyet": 62.9,
+            "satilan_adet": 329.0,
+            "satis_kari": 39874.8,
+            "temettu_geliri": 5593.47,
+            "real_maliyet": 24222.66
+        },
+        {
+            "id": 28,
+            "hisse_kodu": "MAVI.IS",
+            "toplam_adet": 2544.84,
+            "ort_maliyet": 38.32,
+            "satilan_adet": 0.0,
+            "satis_kari": 0.0,
+            "temettu_geliri": 4226.48,
+            "real_maliyet": 94032.33
+        },
+        {
+            "id": 29,
+            "hisse_kodu": "FROTO.IS",
+            "toplam_adet": 443.0,
+            "ort_maliyet": 89.81,
+            "satilan_adet": 0.0,
+            "satis_kari": 0.0,
+            "temettu_geliri": 2833.77,
+            "real_maliyet": 37454.71
+        },
+        {
+            "id": 30,
+            "hisse_kodu": "THYAO.IS",
+            "toplam_adet": 220.0,
+            "ort_maliyet": 291.71,
+            "satilan_adet": 0.0,
+            "satis_kari": 0.0,
+            "temettu_geliri": 0.0,
+            "real_maliyet": 64175.5
+        },
+        {
+            "id": 31,
+            "hisse_kodu": "AVPGY.IS",
+            "toplam_adet": 1440.0,
+            "ort_maliyet": 56.85,
+            "satilan_adet": 0.0,
+            "satis_kari": 0.0,
+            "temettu_geliri": 2009.13,
+            "real_maliyet": 79858.99
+        },
+        {
+            "id": 32,
+            "hisse_kodu": "KCHOL.IS",
+            "toplam_adet": 484.0,
+            "ort_maliyet": 164.26,
+            "satilan_adet": 0.0,
+            "satis_kari": 0.0,
+            "temettu_geliri": 2807.2,
+            "real_maliyet": 77192.9
+        },
+        {
+            "id": 33,
+            "hisse_kodu": "YKBNK.IS",
+            "toplam_adet": 3009.0,
+            "ort_maliyet": 32.91,
+            "satilan_adet": 0.0,
+            "satis_kari": 0.0,
+            "temettu_geliri": 0.0,
+            "real_maliyet": 99021.3
+        },
+        {
+            "id": 34,
+            "hisse_kodu": "SAHOL.IS",
+            "toplam_adet": 902.0,
+            "ort_maliyet": 86.76,
+            "satilan_adet": 0.0,
+            "satis_kari": 0.0,
+            "temettu_geliri": 1199.66,
+            "real_maliyet": 77134.08
+        },
+        {
+            "id": 35,
+            "hisse_kodu": "EKGYO.IS",
+            "toplam_adet": 4125.0,
+            "ort_maliyet": 19.39,
+            "satilan_adet": 0.0,
+            "satis_kari": 0.0,
+            "temettu_geliri": 0.0,
+            "real_maliyet": 79983.75
+        },
+        {
+            "id": 36,
+            "hisse_kodu": "GARAN.IS",
+            "toplam_adet": 723.0,
+            "ort_maliyet": 123.76,
+            "satilan_adet": 0.0,
+            "satis_kari": 0.0,
+            "temettu_geliri": 3129.0,
+            "real_maliyet": 86901.5
+        },
+        {
+            "id": 37,
+            "hisse_kodu": "EREGL.IS",
+            "toplam_adet": 2910.0,
+            "ort_maliyet": 27.52,
+            "satilan_adet": 0.0,
+            "satis_kari": 0.0,
+            "temettu_geliri": 0.0,
+            "real_maliyet": 80083.2
+        },
+        {
+            "id": 38,
+            "hisse_kodu": "AKBNK.IS",
+            "toplam_adet": 1338.0,
+            "ort_maliyet": 66.92,
+            "satilan_adet": 0.0,
+            "satis_kari": 0.0,
+            "temettu_geliri": 2502.06,
+            "real_maliyet": 87475.28
+        },
+        {
+            "id": 39,
+            "hisse_kodu": "BUCIM.IS",
+            "toplam_adet": 0.0,
+            "ort_maliyet": 0.0,
+            "satilan_adet": 1000.0,
+            "satis_kari": 7050.0,
+            "temettu_geliri": 0.0,
+            "real_maliyet": 0.0
+        },
+        {
+            "id": 40,
+            "hisse_kodu": "SOKM.IS",
+            "toplam_adet": 0.0,
+            "ort_maliyet": 0.0,
+            "satilan_adet": 500.0,
+            "satis_kari": 27660.0,
+            "temettu_geliri": 0.0,
+            "real_maliyet": 0.0
+        },
+        {
+            "id": 41,
+            "hisse_kodu": "ANHHY.IS",
+            "toplam_adet": 0.0,
+            "ort_maliyet": 0.0,
+            "satilan_adet": 100.0,
+            "satis_kari": 8700.0,
+            "temettu_geliri": 0.0,
+            "real_maliyet": 0.0
+        },
+        {
+            "id": 42,
+            "hisse_kodu": "EFORC.IS",
+            "toplam_adet": 0.0,
+            "ort_maliyet": 0.0,
+            "satilan_adet": 44.0,
+            "satis_kari": 3300.0,
+            "temettu_geliri": 0.0,
+            "real_maliyet": 0.0
+        },
+        {
+            "id": 43,
+            "hisse_kodu": "BULGS.IS",
+            "toplam_adet": 0.0,
+            "ort_maliyet": 0.0,
+            "satilan_adet": 201.0,
+            "satis_kari": 4221.0,
+            "temettu_geliri": 0.0,
+            "real_maliyet": 0.0
+        },
+        {
+            "id": 44,
+            "hisse_kodu": "ALTIN.S1",
+            "toplam_adet": 0.0,
+            "ort_maliyet": 0.0,
+            "satilan_adet": 402.0,
+            "satis_kari": 20904.0,
+            "temettu_geliri": 0.0,
+            "real_maliyet": 0.0
+        }
+    ]
+}
