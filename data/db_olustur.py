@@ -66,12 +66,11 @@ def tablo_olustur(db):
         CREATE TABLE Portfoy_Ozet (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             hisse_kodu TEXT UNIQUE,
-            toplam_adet REAL DEFAULT 0,
+            adet REAL DEFAULT 0,
             ort_maliyet REAL DEFAULT 0,
-            satilan_adet REAL DEFAULT 0,
-            satis_kari REAL DEFAULT 0,
-            temettu_geliri REAL DEFAULT 0,
-            real_maliyet REAL DEFAULT 0)
+            fiyat REAL DEFAULT 0,
+            toplam_maliyet REAL DEFAULT 0,
+            kar_zarar REAL DEFAULT 0)
 """)
 
     # 6. Tahvil tablosu
