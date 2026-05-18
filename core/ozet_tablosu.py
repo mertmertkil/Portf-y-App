@@ -33,6 +33,7 @@ def portfoy_guncelle():
     cursor.execute("SELECT DISTINCT hisse_kodu FROM Islemler")
     hisseler = cursor.fetchall()
 
+    tum_kar_zarar = 0
     for row in hisseler:
         hisse_kodu = row[0]  # Tuple içinden string'i aldık
         anlik_fiyat = get_live_price(hisse_kodu)
@@ -46,6 +47,10 @@ def portfoy_guncelle():
                 (hisse_kodu,),
             )
         islemler = cursor.fetchall()
+
+        print(
+            f"\n\n-----{hisse_kodu} hissesi için hesaplamalar başlatılıyor.------\n\n"
+        )
 
         # Temettu hesapalaması
         cursor.execute(
@@ -81,9 +86,11 @@ def portfoy_guncelle():
                 toplam_brut_gelir += donemlik_brut
                 toplam_net_gelir += donemlik_net
             print(
-                f"{t_tarih} tarihinde dönemlik temettu {o_tarihteki_adet} tane hisse için {donemlik_net}"
+                f"* {t_tarih} * tarihinde dönemlik temettu * {o_tarihteki_adet} * tane hisse için * {round(donemlik_net, 2)} TL. *\n"
             )
-            print(f"{hisse_kodu} için toplam temettu: {toplam_net_gelir} ")
+            print(
+                f"* {hisse_kodu} * için toplam temettu: * {round(toplam_net_gelir, 2)} TL. *\n"
+            )
 
         # ALIŞ SATIŞ Hesaplamaları
 
@@ -102,7 +109,7 @@ def portfoy_guncelle():
                 alis_maliyet += adet * fiyat
                 alis_adet += adet
                 print(
-                    f"{hisse_kodu}. için alış işlemi yapılıyor.\n {adet} adet, {fiyat} TL'den {adet*fiyat}' TL'lik {hisse_kodu} alımı yapıldı."
+                    f"* {hisse_kodu} *. için alış işlemi yapılıyor.\n * {adet} * adet, * {fiyat} * TL'den * {adet*fiyat} *' TL'lik {hisse_kodu} alımı yapıldı.\n"
                 )
                 ort_maliyet = (alis_maliyet / alis_adet) - (
                     toplam_net_gelir / alis_adet
@@ -112,14 +119,16 @@ def portfoy_guncelle():
                 satis_adet += adet
                 satis_bedeli += fiyat * adet
                 print(
-                    f"{hisse_kodu} için satış işlemi yapılıyor.\n {adet} adet, {fiyat} TL'den {adet*fiyat} TL'lik {hisse_kodu} satışı yapıldı."
+                    f"** {hisse_kodu} ** için satış işlemi yapılıyor.\n ** {adet} ** adet, ** {fiyat} ** TL'den ** {adet*fiyat} ** TL'lik ** {hisse_kodu} ** satışı yapıldı.\n"
                 )
 
         toplam_adet = alis_adet - satis_adet
         toplam_maliyet = alis_maliyet - toplam_net_gelir
 
         if toplam_adet == 0:
-            print(f"{hisse_kodu} tamamı satıldığı için ortalama maliyet hesaplanmadı.")
+            print(
+                f"{hisse_kodu} tamamı satıldığı için ortalama maliyet hesaplanmadı.\n"
+            )
             pass
 
         # Kar/Zarar hesaplama: (Anlık Fiyat - Ort. Maliyet) * Adet
@@ -127,11 +136,16 @@ def portfoy_guncelle():
             kar_zarar = satis_bedeli - alis_maliyet
         elif satis_bedeli == 0:
             print(
-                f"{hisse_kodu} toplam adet : { toplam_adet} * {anlik_fiyat} eksi { alis_maliyet} ort maliyet {ort_maliyet}"
+                f"* {hisse_kodu} * toplam adet :  { toplam_adet} * {anlik_fiyat} eksi { alis_maliyet} ort maliyet {ort_maliyet}\n"
             )
             kar_zarar = (toplam_adet * anlik_fiyat) - toplam_maliyet
+
         else:
             kar_zarar = (toplam_adet * anlik_fiyat) - (alis_maliyet - satis_bedeli)
+
+        tum_kar_zarar += kar_zarar
+
+        print(f" Tüm kar zarar :  *** {round(tum_kar_zarar)} TL. ***")
 
         cursor.execute(
             """

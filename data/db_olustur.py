@@ -63,7 +63,7 @@ def tablo_olustur(db):
     # 5. Portföy özet tablosu
 
     cursor.execute("""
-        CREATE TABLE Portfoy_Ozet (
+        CREATE TABLE IF NOT EXISTS Portfoy_Ozet (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             hisse_kodu TEXT UNIQUE,
             adet REAL DEFAULT 0,
@@ -97,6 +97,13 @@ def tablo_olustur(db):
         islem_durumu TEXT DEFAULT 'BEKLIYOR', -- 'ALINDI' veya 'BEKLIYOR'
         notlar TEXT
             )
+""")
+
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS Fon_Ozet(
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            fon_kodu TEXT NOT NULL,
+            kar_zarar REAL DEFAULT 0)
 """)
 
     db.commit()
