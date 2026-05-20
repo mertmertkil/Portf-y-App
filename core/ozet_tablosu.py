@@ -101,6 +101,7 @@ def portfoy_guncelle():
         toplam_maliyet = 0
         ort_maliyet = 0
         satis_bedeli = 0
+        kar_zarar_oran = 0
 
         for islem_tipi, adet, fiyat in islemler:
             tip_temiz = islem_tipi.strip().upper()
@@ -143,14 +144,17 @@ def portfoy_guncelle():
         else:
             kar_zarar = (toplam_adet * anlik_fiyat) - (alis_maliyet - satis_bedeli)
 
+        if toplam_maliyet > 0:
+            kar_zarar_oran = (kar_zarar / toplam_maliyet) * 100
+
         tum_kar_zarar += kar_zarar
 
         print(f" Tüm kar zarar :  *** {round(tum_kar_zarar)} TL. ***")
 
         cursor.execute(
             """
-            INSERT INTO Portfoy_Ozet(hisse_kodu, adet, ort_maliyet, fiyat, toplam_maliyet, kar_zarar)
-            VALUES(?, ?, ?, ?, ?, ?)
+            INSERT INTO Portfoy_Ozet(hisse_kodu, adet, ort_maliyet, fiyat, toplam_maliyet, kar_zarar, kar_zarar_oran)
+            VALUES(?, ?, ?, ?, ?, ?, ?)
             """,
             (
                 hisse_kodu,
@@ -159,6 +163,7 @@ def portfoy_guncelle():
                 anlik_fiyat,
                 round(alis_maliyet, 2),
                 round(kar_zarar, 2),
+                round(kar_zarar_oran, 2),
             ),
         )
     db.commit()
@@ -169,10 +174,13 @@ def portfoy_guncelle():
 def get_grafik_verileri():
     ana_dizin = os.path.dirname(os.path.abspath(__file__))
     db_yolu = os.path.join(ana_dizin, "..", "database.db")
-
     conn = sqlite3.connect(db_yolu)
 
-    query = "SELECT hisse_kodu, adet, ort_maliyet, toplam_maliyet, kar_zarar FROM Portfoy_Ozet WHERE adet > 0 OR kar_zarar != 0"
+    query = """
+    SELECT hisse_kodu, adet, ort_maliyet, fiyat, toplam_maliyet, kar_zarar, kar_zarar_oran
+    FROM Portfoy_Ozet 
+    WHERE adet > 0 AND kar_zarar != 0
+    """
 
     df = pd.read_sql_query(query, conn)
     conn.close()
