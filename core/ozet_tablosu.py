@@ -158,7 +158,7 @@ def portfoy_guncelle():
             """,
             (
                 hisse_kodu,
-                toplam_adet,
+                round(toplam_adet, 2),
                 round(ort_maliyet, 2),
                 anlik_fiyat,
                 round(alis_maliyet, 2),

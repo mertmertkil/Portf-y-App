@@ -23,16 +23,44 @@ def get_hisse_hareketleri(hisse_kodu):
 
 
 def get_hisse_temettu_detaylari(hisse_kodu):
-    conn = sqlite3.connect("database.db")
+    ana_dizin = os.path.dirname(os.path.abspath(__file__))
+    db_yolu = os.path.join(ana_dizin, "..", "database.db")
+    conn = sqlite3.connect(db_yolu)
+    cursor = conn.cursor()
 
-    # Tarihe göre tersten sıralayarak en son yatan temettüyü en üste alıyoruz
-    query = """
-    SELECT tarih, net_miktar 
-    FROM Temettuler 
-    WHERE hisse_kodu = ? 
-    ORDER BY tarih DESC
-    """
+    # Temettüleri çek
+    cursor.execute(
+        "SELECT net_miktar, tarih FROM Temettuler WHERE hisse_kodu = ? ORDER BY tarih ASC",
+        (hisse_kodu,),
+    )
+    temettuler = cursor.fetchall()
 
-    df = pd.read_sql_query(query, conn, params=(hisse_kodu,))
+    sonuclar = []
+    for net_birim, t_tarih in temettuler:
+        # O tarihteki toplam hisse adedini hesapla (Alış - Satış)
+        cursor.execute(
+            """
+            SELECT SUM(CASE WHEN islem_tipi = 'Alış' THEN adet ELSE -adet END) 
+            FROM Islemler 
+            WHERE hisse_kodu = ? AND tarih <= ?
+        """,
+            (hisse_kodu, t_tarih),
+        )
+
+        adet_sonuc = cursor.fetchone()[0]
+        o_tarihteki_adet = adet_sonuc if adet_sonuc is not None else 0
+
+        # Toplam yatan parayı hesapla
+        toplam_net_kazanc = o_tarihteki_adet * net_birim
+
+        sonuclar.append(
+            {
+                "tarih": t_tarih,
+                "birim_net": net_birim,
+                "o_tarihteki_adet": o_tarihteki_adet,
+                "toplam_net_kazanc": toplam_net_kazanc,
+            }
+        )
+
     conn.close()
-    return df
+    return pd.DataFrame(sonuclar)
