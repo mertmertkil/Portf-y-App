@@ -96,6 +96,7 @@ if secilen_hisse:
             column_config={
                 "islem_tipi": st.column_config.TextColumn("İşlem"),
                 "tarih": st.column_config.DateColumn("Tarih"),
+                "adet": st.column_config.NumberColumn("Adet", format="%.0f"),
                 "fiyat": st.column_config.NumberColumn("Birim Fiyat", format="%.2f TL"),
                 "toplam_tutar": st.column_config.NumberColumn(
                     "Toplam", format="%.2f TL"
@@ -124,7 +125,9 @@ if secilen_hisse:
                     "birim_net": st.column_config.NumberColumn(
                         "Birim Net", format="%.4f TL"
                     ),
-                    "o_tarihteki_adet": st.column_config.NumberColumn("Hisse Adedi"),
+                    "o_tarihteki_adet": st.column_config.NumberColumn(
+                        "Hisse Adedi", format="%.0f"
+                    ),
                     "toplam_net_kazanc": st.column_config.NumberColumn(
                         "Yatan Toplam", format="%.2f TL"
                     ),
