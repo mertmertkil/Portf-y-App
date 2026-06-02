@@ -1,5 +1,6 @@
 import sqlite3
 import os
+import pandas as pd
 
 
 def portfoy_guncelle():
@@ -55,6 +56,21 @@ def portfoy_guncelle():
     finally:
         if "db" in locals():
             db.close()
+
+
+def get_fon_verileri():
+    ana_dizin = os.path.dirname(os.path.abspath(__file__))
+    db_yolu = os.path.join(ana_dizin, "..", "database.db")
+    conn = sqlite3.connect(db_yolu)
+
+    query = """
+    SELECT fon_kodu, kar_zarar
+    FROM Fon_Ozet 
+    """
+
+    df = pd.read_sql_query(query, conn)
+    conn.close()
+    return df
 
 
 if __name__ == "__main__":

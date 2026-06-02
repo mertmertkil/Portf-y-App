@@ -1,9 +1,26 @@
 import streamlit as st
+import pandas as pd
 from data.db_manager import get_hisse_hareketleri
 from core.ozet_tablosu import get_grafik_verileri
 from data.db_manager import get_hisse_temettu_detaylari
 
-# ÖNEMLİ: st.set_page_config artık main.py içinde olduğu için buradan kaldırıldı.
+
+# --- YARDIMCI TASARIM FONKSİYONU (Zebra Şerit Yapısı) ---
+def tabloyu_seritli_yap(df):
+    """Tablo satırlarını bir açık bir koyu (zebra) yapmak için doğru stili uygular."""
+    if df.empty:
+        return df
+
+    def serit_boya(row):
+        # Satırın indeksi (numarası) çift ise tüm satırı hafif griye boya
+        if row.name % 2 == 0:
+            return ["background-color: rgba(128, 128, 128, 0.05)"] * len(row)
+        # Tek ise boş bırak (varsayılan renk kalsın)
+        return [""] * len(row)
+
+    # apply() kullanarak satır satır (axis=1) işlem yapıyoruz
+    return df.style.apply(serit_boya, axis=1)
+
 
 # --- ÜST NAVİGASYON VE BAŞLIK ---
 col_back, col_title = st.columns([1, 5])
@@ -42,11 +59,25 @@ if secilen_hisse:
     # 2. Üst Özet Kartları (Metrics)
     hisse_ozet = df_ozet[df_ozet["hisse_kodu"] == secilen_hisse].iloc[0]
 
+    # Kâr/Zarar durumuna göre rengi dinamik belirliyoruz
+    kz_degeri = hisse_ozet["kar_zarar"]
+
     c1, c2, c3, c4 = st.columns(4)
     c1.metric("Mevcut Adet", f"{hisse_ozet['adet']:.2f}")
     c2.metric("Maliyet", f"{hisse_ozet['ort_maliyet']:.2f} TL")
     c3.metric("Toplam Yatırılan", f"{hisse_ozet['toplam_maliyet']:,.2f} TL")
-    c4.metric("Net Kâr/Zarar", f"{hisse_ozet['kar_zarar']:,.2f} TL")
+
+    # Net Kâr/Zarar kartına renk yönü (delta_color) verdik
+    c4.metric(
+        "Net Kâr/Zarar",
+        f"{kz_degeri:,.2f} TL",
+        delta=(
+            f"{(kz_degeri / hisse_ozet['toplam_maliyet'] * 100):.2f}%"
+            if hisse_ozet["toplam_maliyet"] > 0
+            else "0%"
+        ),
+        delta_color="normal",
+    )
 
     st.divider()
 
@@ -55,8 +86,11 @@ if secilen_hisse:
     hareketler_df = get_hisse_hareketleri(secilen_hisse)
 
     if not hareketler_df.empty:
+        # Satır indekslerini sıfırlıyoruz ki çift/tek kontrolü (row.name) hatasız çalışsın
+        hareketler_df = hareketler_df.reset_index(drop=True)
+
         st.dataframe(
-            hareketler_df,
+            tabloyu_seritli_yap(hareketler_df),  # Stil fonksiyonunu burada giydirdik
             use_container_width=True,
             hide_index=True,
             column_config={
@@ -76,8 +110,13 @@ if secilen_hisse:
 
     with st.expander(f"💰 {secilen_hisse} Temettü Ödeme Detayları", expanded=True):
         if not df_temettu_gecmisi.empty:
+            # Satır indekslerini sıfırlıyoruz
+            df_temettu_gecmisi = df_temettu_gecmisi.reset_index(drop=True)
+
             st.dataframe(
-                df_temettu_gecmisi,
+                tabloyu_seritli_yap(
+                    df_temettu_gecmisi
+                ),  # Stil fonksiyonunu burada giydirdik
                 use_container_width=True,
                 hide_index=True,
                 column_config={

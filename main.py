@@ -12,7 +12,27 @@ ana_sayfa = st.Page("pages/0_anasayfa.py", title="Genel Özet", icon="🏠")
 detay_sayfasi = st.Page(
     "pages/1_hisse_detay.py", title="Hisse Analiz Paneli", icon="📊"
 )
+# YENİ SAYFA: İşlem ekleme sayfasını sisteme dahil ediyoruz
+islem_ekle_sayfasi = st.Page(
+    "pages/2_islem_ekle.py", title="Yeni İşlem Ekle", icon="➕"
+)
 
-# Navigasyonu çalıştır
-pg = st.navigation([ana_sayfa, detay_sayfasi])
+temettu_ekle_sayfasi = st.Page(
+    "pages/3_temettu_ekle.py", title="Temettü Ödemesi Ekle", icon="💰"
+)
+
+sonlanan_islemler_sayfasi = st.Page(
+    "pages/4_sonlanan_islemler.py", title="Sonlanan İşlemler", icon="🔚"
+)
+
+# Navigasyonu çalıştır (Yeni sayfayı listeye ekledik)
+pg = st.navigation(
+    [
+        ana_sayfa,
+        detay_sayfasi,
+        islem_ekle_sayfasi,
+        temettu_ekle_sayfasi,
+        sonlanan_islemler_sayfasi,
+    ]
+)
 pg.run()

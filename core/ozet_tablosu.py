@@ -179,7 +179,7 @@ def get_grafik_verileri():
     query = """
     SELECT hisse_kodu, adet, ort_maliyet, fiyat, toplam_maliyet, kar_zarar, kar_zarar_oran
     FROM Portfoy_Ozet 
-    WHERE adet > 0 AND kar_zarar != 0
+    WHERE kar_zarar != 0
     """
 
     df = pd.read_sql_query(query, conn)
