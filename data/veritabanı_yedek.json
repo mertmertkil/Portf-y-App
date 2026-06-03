@@ -1208,224 +1208,268 @@
     ],
     "Portfoy_Ozet": [
         {
-            "id": 837,
+            "id": 23,
             "hisse_kodu": "TUPRS.IS",
             "adet": 1045.0,
             "ort_maliyet": 135.34,
-            "fiyat": 248.8,
+            "fiyat": 245.1,
             "toplam_maliyet": 184759.7,
-            "kar_zarar": 115111.3,
-            "kar_zarar_oran": 71.47
+            "kar_zarar": 111244.8,
+            "kar_zarar_oran": 69.07,
+            "ort_alis_fiyati": 155.26,
+            "ort_satis_fiyati": 275.0
         },
         {
-            "id": 838,
+            "id": 24,
             "hisse_kodu": "TOASO.IS",
             "adet": 681.0,
             "ort_maliyet": 208.59,
-            "fiyat": 303.75,
+            "fiyat": 305.0,
             "toplam_maliyet": 158269.8,
-            "kar_zarar": 64801.95,
-            "kar_zarar_oran": 45.62
+            "kar_zarar": 65653.2,
+            "kar_zarar_oran": 46.22,
+            "ort_alis_fiyati": 232.41,
+            "ort_satis_fiyati": 0.0
         },
         {
-            "id": 839,
+            "id": 25,
             "hisse_kodu": "AEFES.IS",
             "adet": 7055.0,
             "ort_maliyet": 15.86,
-            "fiyat": 20.12,
+            "fiyat": 20.24,
             "toplam_maliyet": 112968.86,
-            "kar_zarar": 30065.74,
-            "kar_zarar_oran": 26.87
+            "kar_zarar": 30912.34,
+            "kar_zarar_oran": 27.63,
+            "ort_alis_fiyati": 16.01,
+            "ort_satis_fiyati": 0.0
         },
         {
-            "id": 840,
+            "id": 26,
             "hisse_kodu": "TCELL.IS",
             "adet": 1000.0,
             "ort_maliyet": 91.6,
-            "fiyat": 106.9,
+            "fiyat": 106.7,
             "toplam_maliyet": 93447.35,
-            "kar_zarar": 15302.19,
-            "kar_zarar_oran": 16.71
+            "kar_zarar": 15102.19,
+            "kar_zarar_oran": 16.49,
+            "ort_alis_fiyati": 93.45,
+            "ort_satis_fiyati": 0.0
         },
         {
-            "id": 841,
+            "id": 27,
             "hisse_kodu": "ENJSA.IS",
             "adet": 763.0,
             "ort_maliyet": 63.82,
-            "fiyat": 112.0,
+            "fiyat": 111.5,
             "toplam_maliyet": 75284.4,
-            "kar_zarar": 50046.4,
-            "kar_zarar_oran": 71.81
+            "kar_zarar": 49664.9,
+            "kar_zarar_oran": 71.26,
+            "ort_alis_fiyati": 68.94,
+            "ort_satis_fiyati": 121.2
         },
         {
-            "id": 842,
+            "id": 28,
             "hisse_kodu": "MAVI.IS",
             "adet": 2604.0,
             "ort_maliyet": 38.09,
-            "fiyat": 42.54,
+            "fiyat": 43.06,
             "toplam_maliyet": 103454.74,
-            "kar_zarar": 11595.83,
-            "kar_zarar_oran": 11.69
+            "kar_zarar": 12949.91,
+            "kar_zarar_oran": 13.06,
+            "ort_alis_fiyati": 39.73,
+            "ort_satis_fiyati": 0.0
         },
         {
-            "id": 843,
+            "id": 29,
             "hisse_kodu": "FROTO.IS",
             "adet": 1028.0,
             "ort_maliyet": 90.86,
-            "fiyat": 89.9,
+            "fiyat": 89.2,
             "toplam_maliyet": 101057.25,
-            "kar_zarar": -991.73,
-            "kar_zarar_oran": -1.06
+            "kar_zarar": -1711.33,
+            "kar_zarar_oran": -1.83,
+            "ort_alis_fiyati": 98.3,
+            "ort_satis_fiyati": 0.0
         },
         {
-            "id": 844,
+            "id": 30,
             "hisse_kodu": "THYAO.IS",
             "adet": 220.0,
             "ort_maliyet": 291.71,
-            "fiyat": 297.5,
+            "fiyat": 299.75,
             "toplam_maliyet": 64175.5,
-            "kar_zarar": 1274.5,
-            "kar_zarar_oran": 1.99
+            "kar_zarar": 1769.5,
+            "kar_zarar_oran": 2.76,
+            "ort_alis_fiyati": 291.71,
+            "ort_satis_fiyati": 0.0
         },
         {
-            "id": 845,
+            "id": 31,
             "hisse_kodu": "AVPGY.IS",
             "adet": 1500.0,
             "ort_maliyet": 54.52,
-            "fiyat": 63.65,
+            "fiyat": 63.9,
             "toplam_maliyet": 87537.25,
-            "kar_zarar": 13696.88,
-            "kar_zarar_oran": 16.75
+            "kar_zarar": 14071.88,
+            "kar_zarar_oran": 17.21,
+            "ort_alis_fiyati": 58.36,
+            "ort_satis_fiyati": 0.0
         },
         {
-            "id": 846,
+            "id": 32,
             "hisse_kodu": "KCHOL.IS",
             "adet": 484.0,
             "ort_maliyet": 165.29,
             "fiyat": 192.2,
             "toplam_maliyet": 82807.3,
             "kar_zarar": 13024.7,
-            "kar_zarar_oran": 16.28
+            "kar_zarar_oran": 16.28,
+            "ort_alis_fiyati": 171.09,
+            "ort_satis_fiyati": 0.0
         },
         {
-            "id": 847,
+            "id": 33,
             "hisse_kodu": "YKBNK.IS",
             "adet": 3009.0,
             "ort_maliyet": 32.91,
-            "fiyat": 34.92,
+            "fiyat": 35.1,
             "toplam_maliyet": 99021.3,
-            "kar_zarar": 6052.98,
-            "kar_zarar_oran": 6.11
+            "kar_zarar": 6594.6,
+            "kar_zarar_oran": 6.66,
+            "ort_alis_fiyati": 32.91,
+            "ort_satis_fiyati": 0.0
         },
         {
-            "id": 848,
+            "id": 34,
             "hisse_kodu": "SAHOL.IS",
             "adet": 902.0,
             "ort_maliyet": 86.84,
-            "fiyat": 92.2,
+            "fiyat": 91.9,
             "toplam_maliyet": 79533.4,
-            "kar_zarar": 4830.66,
-            "kar_zarar_oran": 6.17
+            "kar_zarar": 4560.06,
+            "kar_zarar_oran": 5.82,
+            "ort_alis_fiyati": 88.17,
+            "ort_satis_fiyati": 0.0
         },
         {
-            "id": 849,
+            "id": 35,
             "hisse_kodu": "EKGYO.IS",
             "adet": 4125.0,
             "ort_maliyet": 19.39,
-            "fiyat": 20.12,
+            "fiyat": 20.04,
             "toplam_maliyet": 79983.75,
-            "kar_zarar": 3011.25,
-            "kar_zarar_oran": 3.76
+            "kar_zarar": 2681.25,
+            "kar_zarar_oran": 3.35,
+            "ort_alis_fiyati": 19.39,
+            "ort_satis_fiyati": 0.0
         },
         {
-            "id": 850,
+            "id": 36,
             "hisse_kodu": "GARAN.IS",
             "adet": 723.0,
             "ort_maliyet": 124.52,
             "fiyat": 128.5,
             "toplam_maliyet": 93159.5,
             "kar_zarar": 2875.0,
-            "kar_zarar_oran": 3.19
+            "kar_zarar_oran": 3.19,
+            "ort_alis_fiyati": 128.85,
+            "ort_satis_fiyati": 0.0
         },
         {
-            "id": 851,
+            "id": 37,
             "hisse_kodu": "EREGL.IS",
             "adet": 2910.0,
             "ort_maliyet": 27.52,
-            "fiyat": 40.28,
+            "fiyat": 40.4,
             "toplam_maliyet": 80083.2,
-            "kar_zarar": 37131.6,
-            "kar_zarar_oran": 46.37
+            "kar_zarar": 37480.8,
+            "kar_zarar_oran": 46.8,
+            "ort_alis_fiyati": 27.52,
+            "ort_satis_fiyati": 0.0
         },
         {
-            "id": 852,
+            "id": 38,
             "hisse_kodu": "AKBNK.IS",
             "adet": 1338.0,
             "ort_maliyet": 67.25,
-            "fiyat": 66.0,
+            "fiyat": 65.95,
             "toplam_maliyet": 92479.4,
-            "kar_zarar": -1669.34,
-            "kar_zarar_oran": -1.86
+            "kar_zarar": -1736.24,
+            "kar_zarar_oran": -1.93,
+            "ort_alis_fiyati": 69.12,
+            "ort_satis_fiyati": 0.0
         },
         {
-            "id": 853,
+            "id": 39,
             "hisse_kodu": "BUCIM.IS",
             "adet": 0.0,
             "ort_maliyet": 7.76,
-            "fiyat": 6.23,
+            "fiyat": 6.33,
             "toplam_maliyet": 7755.12,
             "kar_zarar": -705.12,
-            "kar_zarar_oran": -9.09
+            "kar_zarar_oran": -9.09,
+            "ort_alis_fiyati": 7.76,
+            "ort_satis_fiyati": 7.05
         },
         {
-            "id": 854,
+            "id": 40,
             "hisse_kodu": "SOKM.IS",
             "adet": 0.0,
             "ort_maliyet": 39.52,
-            "fiyat": 49.3,
+            "fiyat": 49.62,
             "toplam_maliyet": 19760.0,
             "kar_zarar": 7900.0,
-            "kar_zarar_oran": 39.98
+            "kar_zarar_oran": 39.98,
+            "ort_alis_fiyati": 39.52,
+            "ort_satis_fiyati": 55.32
         },
         {
-            "id": 855,
+            "id": 41,
             "hisse_kodu": "ANHYT.IS",
             "adet": 0.0,
             "ort_maliyet": 82.45,
-            "fiyat": 105.3,
+            "fiyat": 105.4,
             "toplam_maliyet": 8245.0,
             "kar_zarar": 455.0,
-            "kar_zarar_oran": 5.52
+            "kar_zarar_oran": 5.52,
+            "ort_alis_fiyati": 82.45,
+            "ort_satis_fiyati": 87.0
         },
         {
-            "id": 856,
+            "id": 42,
             "hisse_kodu": "EFOR.IS",
             "adet": 0.0,
             "ort_maliyet": 14.5,
-            "fiyat": 11.6,
+            "fiyat": 11.58,
             "toplam_maliyet": 638.0,
             "kar_zarar": 2662.0,
-            "kar_zarar_oran": 417.24
+            "kar_zarar_oran": 417.24,
+            "ort_alis_fiyati": 14.5,
+            "ort_satis_fiyati": 75.0
         },
         {
-            "id": 857,
+            "id": 43,
             "hisse_kodu": "BULGS.IS",
             "adet": 0.0,
             "ort_maliyet": 12.18,
-            "fiyat": 41.46,
+            "fiyat": 41.9,
             "toplam_maliyet": 2448.18,
             "kar_zarar": 1772.82,
-            "kar_zarar_oran": 72.41
+            "kar_zarar_oran": 72.41,
+            "ort_alis_fiyati": 12.18,
+            "ort_satis_fiyati": 21.0
         },
         {
-            "id": 858,
+            "id": 44,
             "hisse_kodu": "ALTIN.S1",
             "adet": 0.0,
             "ort_maliyet": 0.0,
             "fiyat": 1.0,
             "toplam_maliyet": 0.0,
             "kar_zarar": 0.0,
-            "kar_zarar_oran": 0.0
+            "kar_zarar_oran": 0.0,
+            "ort_alis_fiyati": 0.0,
+            "ort_satis_fiyati": 0.0
         }
     ]
 }

@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from core.ozet_tablosu import get_grafik_verileri
+from data.get_grafik_verileri import get_grafik_verileri
 from core.fon_ozet import get_fon_verileri
 
 # --- SAYFA AYARLARI VE BAŞLIK ---
@@ -44,11 +44,21 @@ with tab_hisse:
             df_sonlanan_hisse = df_hisse[df_hisse["adet"] == 0].copy()
 
             if not df_sonlanan_hisse.empty:
-                # İhtiyacımız olan sütunları seçelim ve temizleyelim
-                # Not: Eğer core içinde kar_zarar_oran yerine farklı bir ad varsa güncelleyebilirsin
-                view_columns = ["hisse_kodu", "toplam_maliyet", "kar_zarar"]
+                # --- YENİ SÜTUNLAR eklendi: ort_alis_fiyati, ort_satis_fiyati ---
+                view_columns = [
+                    "hisse_kodu",
+                    "ort_alis_fiyati",  # Veritabanından gelen ortalama alış fiyatı
+                    "ort_satis_fiyati",  # Veritabanından gelen ortalama satış fiyatı
+                    "toplam_maliyet",
+                    "kar_zarar",
+                ]
                 if "kar_zarar_oran" in df_sonlanan_hisse.columns:
                     view_columns.append("kar_zarar_oran")
+
+                # Sütunların DataFrame'de mevcut olup olmadığını güvenle kontrol edelim
+                view_columns = [
+                    col for col in view_columns if col in df_sonlanan_hisse.columns
+                ]
 
                 hisse_gosterim = df_sonlanan_hisse[view_columns].reset_index(drop=True)
 
@@ -74,6 +84,8 @@ with tab_hisse:
                     ),
                 ).format(
                     {
+                        "ort_alis_fiyati": "{:,.2f} TL",  # Formatlama eklendi
+                        "ort_satis_fiyati": "{:,.2f} TL",  # Formatlama eklendi
                         "toplam_maliyet": "{:,.2f} TL",
                         "kar_zarar": "{:,.2f} TL",
                         "kar_zarar_oran": (
@@ -90,6 +102,8 @@ with tab_hisse:
                     hide_index=True,
                     column_config={
                         "hisse_kodu": "Hisse Kodu",
+                        "ort_alis_fiyati": "Ort. Alış Fiyatı",  # Tablo başlığı
+                        "ort_satis_fiyati": "Ort. Satış Fiyatı",  # Tablo başlığı
                         "toplam_maliyet": "Toplam Çevrilen Hacim",
                         "kar_zarar": "Realize K/Z",
                         "kar_zarar_oran": "Net Başarı (%)",

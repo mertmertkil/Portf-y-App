@@ -8,6 +8,7 @@ if ana_dizin not in sys.path:
 
 import sqlite3
 from data.live_price import get_live_price
+from data.get_grafik_verileri import get_grafik_verileri
 
 
 def portfoy_guncelle():
@@ -115,21 +116,21 @@ def portfoy_guncelle():
         toplam_adet = alis_adet - satis_adet
         toplam_maliyet = alis_maliyet - toplam_net_gelir
 
-        if toplam_adet == 0:
-            print(
-                f"{hisse_kodu} tamamı satıldığı için ortalama maliyet hesaplanmadı.\n"
-            )
-            pass
+        if alis_adet > 0:
+            ort_alis_fiyati = alis_maliyet / alis_adet
+        else:
+            ort_alis_fiyati = 0
 
-        # Kar/Zarar hesaplama: (Anlık Fiyat - Ort. Maliyet) * Adet
+        if satis_adet > 0:
+            ort_satis_fiyati = satis_bedeli / satis_adet
+        else:
+            ort_satis_fiyati = 0
+        # ------------------------------------------
+
         if toplam_adet == 0:
             kar_zarar = satis_bedeli - alis_maliyet
         elif satis_bedeli == 0:
-            print(
-                f"* {hisse_kodu} * toplam adet :  { toplam_adet} * {anlik_fiyat} eksi { alis_maliyet} ort maliyet {ort_maliyet}\n"
-            )
             kar_zarar = (toplam_adet * anlik_fiyat) - toplam_maliyet
-
         else:
             kar_zarar = (toplam_adet * anlik_fiyat) - (alis_maliyet - satis_bedeli)
 
@@ -142,8 +143,8 @@ def portfoy_guncelle():
 
         cursor.execute(
             """
-            INSERT INTO Portfoy_Ozet(hisse_kodu, adet, ort_maliyet, fiyat, toplam_maliyet, kar_zarar, kar_zarar_oran)
-            VALUES(?, ?, ?, ?, ?, ?, ?)
+            INSERT INTO Portfoy_Ozet(hisse_kodu, adet, ort_maliyet, fiyat, toplam_maliyet, kar_zarar, kar_zarar_oran, ort_alis_fiyati, ort_satis_fiyati)
+            VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             (
                 hisse_kodu,
@@ -153,6 +154,8 @@ def portfoy_guncelle():
                 round(alis_maliyet, 2),
                 round(kar_zarar, 2),
                 round(kar_zarar_oran, 2),
+                round(ort_alis_fiyati, 2),  # Buranın 0 olmadığından emin oluyoruz
+                round(ort_satis_fiyati, 2),  # Buranın 0 olmadığından emin oluyoruz
             ),
         )
     db.commit()

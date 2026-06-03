@@ -71,7 +71,9 @@ def tablo_olustur(db):
             fiyat REAL DEFAULT 0,
             toplam_maliyet REAL DEFAULT 0,
             kar_zarar REAL DEFAULT 0,
-            kar_zarar_oran REAL DEFAULT 0)
+            kar_zarar_oran REAL DEFAULT 0,
+            ort_alis_fiyati REAL DEFAULT 0,
+            ort_satis_fiyati REAL DEFAULT 0)
 """)
 
     # 6. Tahvil tablosu
