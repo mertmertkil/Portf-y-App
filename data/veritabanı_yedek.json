@@ -1208,217 +1208,217 @@
     ],
     "Portfoy_Ozet": [
         {
-            "id": 573,
+            "id": 837,
             "hisse_kodu": "TUPRS.IS",
             "adet": 1045.0,
             "ort_maliyet": 135.34,
-            "fiyat": 243.3,
+            "fiyat": 248.8,
             "toplam_maliyet": 184759.7,
-            "kar_zarar": 109363.8,
-            "kar_zarar_oran": 67.9
+            "kar_zarar": 115111.3,
+            "kar_zarar_oran": 71.47
         },
         {
-            "id": 574,
+            "id": 838,
             "hisse_kodu": "TOASO.IS",
             "adet": 681.0,
             "ort_maliyet": 208.59,
-            "fiyat": 301.25,
+            "fiyat": 303.75,
             "toplam_maliyet": 158269.8,
-            "kar_zarar": 63099.45,
-            "kar_zarar_oran": 44.42
+            "kar_zarar": 64801.95,
+            "kar_zarar_oran": 45.62
         },
         {
-            "id": 575,
+            "id": 839,
             "hisse_kodu": "AEFES.IS",
             "adet": 7055.0,
             "ort_maliyet": 15.86,
-            "fiyat": 19.9,
+            "fiyat": 20.12,
             "toplam_maliyet": 112968.86,
-            "kar_zarar": 28513.64,
-            "kar_zarar_oran": 25.49
+            "kar_zarar": 30065.74,
+            "kar_zarar_oran": 26.87
         },
         {
-            "id": 576,
+            "id": 840,
             "hisse_kodu": "TCELL.IS",
             "adet": 1000.0,
             "ort_maliyet": 91.6,
-            "fiyat": 104.9,
+            "fiyat": 106.9,
             "toplam_maliyet": 93447.35,
-            "kar_zarar": 13302.19,
-            "kar_zarar_oran": 14.52
+            "kar_zarar": 15302.19,
+            "kar_zarar_oran": 16.71
         },
         {
-            "id": 577,
+            "id": 841,
             "hisse_kodu": "ENJSA.IS",
             "adet": 763.0,
             "ort_maliyet": 63.82,
-            "fiyat": 112.5,
+            "fiyat": 112.0,
             "toplam_maliyet": 75284.4,
-            "kar_zarar": 50427.9,
-            "kar_zarar_oran": 72.36
+            "kar_zarar": 50046.4,
+            "kar_zarar_oran": 71.81
         },
         {
-            "id": 578,
+            "id": 842,
             "hisse_kodu": "MAVI.IS",
             "adet": 2604.0,
             "ort_maliyet": 38.09,
-            "fiyat": 41.9,
+            "fiyat": 42.54,
             "toplam_maliyet": 103454.74,
-            "kar_zarar": 9929.27,
-            "kar_zarar_oran": 10.01
+            "kar_zarar": 11595.83,
+            "kar_zarar_oran": 11.69
         },
         {
-            "id": 579,
+            "id": 843,
             "hisse_kodu": "FROTO.IS",
             "adet": 1028.0,
             "ort_maliyet": 90.86,
-            "fiyat": 87.3,
+            "fiyat": 89.9,
             "toplam_maliyet": 101057.25,
-            "kar_zarar": -3664.53,
-            "kar_zarar_oran": -3.92
+            "kar_zarar": -991.73,
+            "kar_zarar_oran": -1.06
         },
         {
-            "id": 580,
+            "id": 844,
             "hisse_kodu": "THYAO.IS",
             "adet": 220.0,
             "ort_maliyet": 291.71,
-            "fiyat": 296.75,
+            "fiyat": 297.5,
             "toplam_maliyet": 64175.5,
-            "kar_zarar": 1109.5,
-            "kar_zarar_oran": 1.73
+            "kar_zarar": 1274.5,
+            "kar_zarar_oran": 1.99
         },
         {
-            "id": 581,
+            "id": 845,
             "hisse_kodu": "AVPGY.IS",
             "adet": 1500.0,
             "ort_maliyet": 54.52,
-            "fiyat": 62.8,
+            "fiyat": 63.65,
             "toplam_maliyet": 87537.25,
-            "kar_zarar": 12421.88,
-            "kar_zarar_oran": 15.19
+            "kar_zarar": 13696.88,
+            "kar_zarar_oran": 16.75
         },
         {
-            "id": 582,
+            "id": 846,
             "hisse_kodu": "KCHOL.IS",
             "adet": 484.0,
             "ort_maliyet": 165.29,
-            "fiyat": 190.0,
+            "fiyat": 192.2,
             "toplam_maliyet": 82807.3,
-            "kar_zarar": 11959.9,
-            "kar_zarar_oran": 14.95
+            "kar_zarar": 13024.7,
+            "kar_zarar_oran": 16.28
         },
         {
-            "id": 583,
+            "id": 847,
             "hisse_kodu": "YKBNK.IS",
             "adet": 3009.0,
             "ort_maliyet": 32.91,
-            "fiyat": 34.5,
+            "fiyat": 34.92,
             "toplam_maliyet": 99021.3,
-            "kar_zarar": 4789.2,
-            "kar_zarar_oran": 4.84
+            "kar_zarar": 6052.98,
+            "kar_zarar_oran": 6.11
         },
         {
-            "id": 584,
+            "id": 848,
             "hisse_kodu": "SAHOL.IS",
             "adet": 902.0,
             "ort_maliyet": 86.84,
-            "fiyat": 91.65,
+            "fiyat": 92.2,
             "toplam_maliyet": 79533.4,
-            "kar_zarar": 4334.56,
-            "kar_zarar_oran": 5.53
+            "kar_zarar": 4830.66,
+            "kar_zarar_oran": 6.17
         },
         {
-            "id": 585,
+            "id": 849,
             "hisse_kodu": "EKGYO.IS",
             "adet": 4125.0,
             "ort_maliyet": 19.39,
-            "fiyat": 19.76,
+            "fiyat": 20.12,
             "toplam_maliyet": 79983.75,
-            "kar_zarar": 1526.25,
-            "kar_zarar_oran": 1.91
+            "kar_zarar": 3011.25,
+            "kar_zarar_oran": 3.76
         },
         {
-            "id": 586,
+            "id": 850,
             "hisse_kodu": "GARAN.IS",
             "adet": 723.0,
             "ort_maliyet": 124.52,
-            "fiyat": 127.1,
+            "fiyat": 128.5,
             "toplam_maliyet": 93159.5,
-            "kar_zarar": 1862.8,
-            "kar_zarar_oran": 2.07
+            "kar_zarar": 2875.0,
+            "kar_zarar_oran": 3.19
         },
         {
-            "id": 587,
+            "id": 851,
             "hisse_kodu": "EREGL.IS",
             "adet": 2910.0,
             "ort_maliyet": 27.52,
-            "fiyat": 40.42,
+            "fiyat": 40.28,
             "toplam_maliyet": 80083.2,
-            "kar_zarar": 37539.0,
-            "kar_zarar_oran": 46.88
+            "kar_zarar": 37131.6,
+            "kar_zarar_oran": 46.37
         },
         {
-            "id": 588,
+            "id": 852,
             "hisse_kodu": "AKBNK.IS",
             "adet": 1338.0,
             "ort_maliyet": 67.25,
-            "fiyat": 65.6,
+            "fiyat": 66.0,
             "toplam_maliyet": 92479.4,
-            "kar_zarar": -2204.54,
-            "kar_zarar_oran": -2.45
+            "kar_zarar": -1669.34,
+            "kar_zarar_oran": -1.86
         },
         {
-            "id": 589,
+            "id": 853,
             "hisse_kodu": "BUCIM.IS",
             "adet": 0.0,
             "ort_maliyet": 7.76,
-            "fiyat": 6.14,
+            "fiyat": 6.23,
             "toplam_maliyet": 7755.12,
             "kar_zarar": -705.12,
             "kar_zarar_oran": -9.09
         },
         {
-            "id": 590,
+            "id": 854,
             "hisse_kodu": "SOKM.IS",
             "adet": 0.0,
             "ort_maliyet": 39.52,
-            "fiyat": 48.44,
+            "fiyat": 49.3,
             "toplam_maliyet": 19760.0,
             "kar_zarar": 7900.0,
             "kar_zarar_oran": 39.98
         },
         {
-            "id": 591,
+            "id": 855,
             "hisse_kodu": "ANHYT.IS",
             "adet": 0.0,
             "ort_maliyet": 82.45,
-            "fiyat": 104.1,
+            "fiyat": 105.3,
             "toplam_maliyet": 8245.0,
             "kar_zarar": 455.0,
             "kar_zarar_oran": 5.52
         },
         {
-            "id": 592,
+            "id": 856,
             "hisse_kodu": "EFOR.IS",
             "adet": 0.0,
             "ort_maliyet": 14.5,
-            "fiyat": 11.81,
+            "fiyat": 11.6,
             "toplam_maliyet": 638.0,
             "kar_zarar": 2662.0,
             "kar_zarar_oran": 417.24
         },
         {
-            "id": 593,
+            "id": 857,
             "hisse_kodu": "BULGS.IS",
             "adet": 0.0,
             "ort_maliyet": 12.18,
-            "fiyat": 40.9,
+            "fiyat": 41.46,
             "toplam_maliyet": 2448.18,
             "kar_zarar": 1772.82,
             "kar_zarar_oran": 72.41
         },
         {
-            "id": 594,
+            "id": 858,
             "hisse_kodu": "ALTIN.S1",
             "adet": 0.0,
             "ort_maliyet": 0.0,

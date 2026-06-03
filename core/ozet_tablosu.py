@@ -1,25 +1,13 @@
-import sqlite3
 import os
-import pandas as pd
+import sys
 
+ana_dizin = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-import yfinance as yf  # Kütüphaneyi ekledik
+if ana_dizin not in sys.path:
+    sys.path.append(ana_dizin)
 
-
-def get_live_price(hisse_kodu):
-    try:
-        # Yahoo Finance BIST hisselerini .IS uzantısıyla tanır
-        ticker_kod = f"{hisse_kodu.upper()}"
-        ticker = yf.Ticker(ticker_kod)
-
-        # En güncel fiyatı alalım (fast_info veya history ile)
-        data = ticker.history(period="1d")
-        if not data.empty:
-            return data["Close"].iloc[-1]
-        return 0
-    except Exception as e:
-        print(f"{hisse_kodu} fiyatı alınamadı: {e}")
-        return 0
+import sqlite3
+from data.live_price import get_live_price
 
 
 def portfoy_guncelle():
@@ -34,6 +22,7 @@ def portfoy_guncelle():
     hisseler = cursor.fetchall()
 
     tum_kar_zarar = 0
+
     for row in hisseler:
         hisse_kodu = row[0]  # Tuple içinden string'i aldık
         anlik_fiyat = get_live_price(hisse_kodu)
@@ -169,22 +158,6 @@ def portfoy_guncelle():
     db.commit()
     db.close()
     print("\nİşlem başarıyla tamamlandı.")
-
-
-def get_grafik_verileri():
-    ana_dizin = os.path.dirname(os.path.abspath(__file__))
-    db_yolu = os.path.join(ana_dizin, "..", "database.db")
-    conn = sqlite3.connect(db_yolu)
-
-    query = """
-    SELECT hisse_kodu, adet, ort_maliyet, fiyat, toplam_maliyet, kar_zarar, kar_zarar_oran
-    FROM Portfoy_Ozet 
-    WHERE kar_zarar != 0
-    """
-
-    df = pd.read_sql_query(query, conn)
-    conn.close()
-    return df
 
 
 if __name__ == "__main__":

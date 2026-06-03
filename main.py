@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
-from core.ozet_tablosu import get_grafik_verileri, portfoy_guncelle
+from core.ozet_tablosu import portfoy_guncelle
+from data.get_grafik_verileri import get_grafik_verileri
 from ui.charts import portfoy_ozet_grafikleri
 from data.db_json import veritabanini_json_yedekle
 

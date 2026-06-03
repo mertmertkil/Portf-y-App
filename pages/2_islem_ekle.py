@@ -34,8 +34,6 @@ def islem_ekle_to_db(hisse, tip, adet, fiyat, tarih):
         return False
 
 
-# 2. HATA DÜZELTİLDİ: Form ve sütun girintileri hizalandı
-
 # --- ÜST NAVİGASYON VE BAŞLIK ---
 col_back, col_title = st.columns([1, 5])
 

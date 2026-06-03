@@ -113,10 +113,6 @@ with tab_fon:
         df_fon = get_fon_verileri()
 
         if not df_fon.empty:
-            # Senin sisteminde fonların adedi sıfırlananları core katmanında filtrelemediysek,
-            # burada hem adete göre (varsa) filtreleyebiliriz ya da açık portföyünde olmayıp
-            # sadece fon_ozet tablosunda kar_zarar üretenleri yakalayabiliriz.
-            # Şimdilik adet=0 mantığına göre filtreliyoruz:
             if "adet" in df_fon.columns:
                 df_sonlanan_fon = df_fon[df_fon["adet"] == 0].copy()
             else:

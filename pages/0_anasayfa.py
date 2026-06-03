@@ -1,29 +1,15 @@
 import streamlit as st
-from core.ozet_tablosu import get_grafik_verileri, portfoy_guncelle
+from core.ozet_tablosu import portfoy_guncelle
+from data.get_grafik_verileri import get_grafik_verileri
 from ui.charts import portfoy_ozet_grafikleri
 from data.db_json import veritabanini_json_yedekle
 import os
 import sqlite3
 from data.db_manager import get_hisse_temettu_detaylari
 import yfinance as yf
+from data.live_price import get_bist100_price
 
 veritabanini_json_yedekle(json_dosya_adi="veritabanı_yedek.json")
-
-
-def get_bist100_price():
-    try:
-        # yfinance üzerinden BIST 100 endeksini çekiyoruz
-        bist = yf.Ticker("XU100.IS")
-        data = bist.history(period="1d")
-        if not data.empty:
-            current_price = data["Close"].iloc[-1]
-            prev_close = data["Open"].iloc[-1]  # Basit değişim hesabı için
-            change = current_price - prev_close
-            change_percent = (change / prev_close) * 100
-            return current_price, change_percent
-        return None, None
-    except:
-        return None, None
 
 
 # --- BAŞLIK VE GÜNCELLEME BUTONU ---
@@ -115,7 +101,7 @@ if not df.empty:
             st.metric(
                 label="🏛️ BIST 100",
                 value=f"{bist_fiyat:,.2f}",
-                delta=f"%{bist_degisim:.2f}",
+                delta=f"{bist_degisim:+.2f}%",
             )
         else:
             st.metric(label="🏛️ BIST 100", value="Yüklenemedi")
