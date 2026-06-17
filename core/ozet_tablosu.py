@@ -92,6 +92,7 @@ def portfoy_guncelle():
         ort_maliyet = 0
         satis_bedeli = 0
         kar_zarar_oran = 0
+        temettu_sonrasi_maliyet = 0
 
         for islem_tipi, adet, fiyat in islemler:
             tip_temiz = islem_tipi.strip().upper()
@@ -102,9 +103,12 @@ def portfoy_guncelle():
                 print(
                     f"* {hisse_kodu} *. için alış işlemi yapılıyor.\n * {adet} * adet, * {fiyat} * TL'den * {adet*fiyat} *' TL'lik {hisse_kodu} alımı yapıldı.\n"
                 )
-                ort_maliyet = (alis_maliyet / alis_adet) - (
-                    toplam_net_gelir / alis_adet
-                )
+                if toplam_net_gelir > 0:
+                    ort_maliyet = (alis_maliyet / alis_adet) - (
+                        toplam_net_gelir / alis_adet
+                    )
+                else:
+                    ort_maliyet = alis_maliyet / alis_adet
 
             elif tip_temiz == "SATIŞ":
                 satis_adet += adet
@@ -115,6 +119,7 @@ def portfoy_guncelle():
 
         toplam_adet = alis_adet - satis_adet
         toplam_maliyet = alis_maliyet - toplam_net_gelir
+        temettu_sonrasi_maliyet = toplam_maliyet - toplam_net_gelir
 
         if alis_adet > 0:
             ort_alis_fiyati = alis_maliyet / alis_adet
@@ -126,13 +131,15 @@ def portfoy_guncelle():
         else:
             ort_satis_fiyati = 0
         # ------------------------------------------
+        guncel_deger = toplam_adet * anlik_fiyat
+        satis_kari = (ort_satis_fiyati - ort_maliyet) * satis_adet
 
         if toplam_adet == 0:
             kar_zarar = satis_bedeli - alis_maliyet
         elif satis_bedeli == 0:
             kar_zarar = (toplam_adet * anlik_fiyat) - toplam_maliyet
         else:
-            kar_zarar = (toplam_adet * anlik_fiyat) - (alis_maliyet - satis_bedeli)
+            kar_zarar = guncel_deger - (toplam_maliyet - satis_kari)
 
         if toplam_maliyet > 0:
             kar_zarar_oran = (kar_zarar / toplam_maliyet) * 100
@@ -151,7 +158,7 @@ def portfoy_guncelle():
                 round(toplam_adet, 2),
                 round(ort_maliyet, 2),
                 anlik_fiyat,
-                round(alis_maliyet, 2),
+                round(temettu_sonrasi_maliyet, 2),
                 round(kar_zarar, 2),
                 round(kar_zarar_oran, 2),
                 round(ort_alis_fiyati, 2),  # Buranın 0 olmadığından emin oluyoruz

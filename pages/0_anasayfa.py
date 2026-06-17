@@ -37,9 +37,10 @@ if not df_hepsi.empty:
 
 if not df.empty:
     # --- ÜST ÖZET METRİK KARTLARI (DİNAMİK) ---
-    toplam_maliyet = df["toplam_maliyet"].sum()
+
     toplam_guncel_deger = (df["adet"] * df["fiyat"]).sum()
     toplam_kar_zarar = df["kar_zarar"].sum()
+    toplam_maliyet = df["toplam_maliyet"].sum()
 
     genel_kz_oran = (
         (toplam_kar_zarar / toplam_maliyet * 100) if toplam_maliyet > 0 else 0.0
